@@ -1,4 +1,6 @@
 # usage: `source make_template.sh 01` would create Advent01.java
+if [[ $# -eq 0 ]]; then echo "must pass an argument"; return 1; fi
+if [[ ${#1} != 2 ]]; then echo "argument must be two digits long"; return 1; fi
 if [[ -f Advent$1.java ]]; then echo "Advent$1.java already exists!"; return 1; fi
 
 cat -> Advent$1.java <<- EndOfString
@@ -25,7 +27,7 @@ public class Advent$1 {
         // Part 2:
         //int solution_b = ;
         //System.out.println("Solution $1b: " + solution_b);
-        
+
         //if (example) {
         //   int correct_b = ;
         //   Shared.checkResult(solution_b, correct_b);
