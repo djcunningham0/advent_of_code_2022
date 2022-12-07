@@ -5,9 +5,9 @@ import java.util.Collections;
 public class Advent01 {
     public static void main(String[] args) throws IOException {
 
-        boolean sample = ((args.length > 0) && (args[0].equals("sample")));
+        boolean example = ((args.length > 0) && (args[0].equals("example")));
 
-        String file = (sample) ? "data/sample_01.txt" : "data/01.txt";
+        String file = (example) ? "data/example_01.txt" : "data/01.txt";
         String[] data = Shared.readFile(file);
 
         ArrayList<Integer> elf_list = new ArrayList<>();
@@ -28,7 +28,7 @@ public class Advent01 {
         int solution_a = Collections.max(elf_list);
         System.out.println("Solution 01a: " + solution_a);
 
-        if (sample) {
+        if (example) {
             String check = Shared.checkResult(solution_a, 24000);
             System.out.println(check);
         }
@@ -38,7 +38,7 @@ public class Advent01 {
         int solution_b = elf_list.get(0) + elf_list.get(1) + elf_list.get(2);
         System.out.println("Solution 01b: " + solution_b);
 
-        if (sample) {
+        if (example) {
             String check_b = Shared.checkResult(solution_b, 45000);
             System.out.println(check_b);
         }
