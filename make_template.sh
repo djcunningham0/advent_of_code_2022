@@ -35,3 +35,6 @@ public class Advent$1 {
     }
 }
 EndOfString
+
+touch data/$1.txt
+touch data/example_$1.txt
