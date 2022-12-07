@@ -37,4 +37,12 @@ public class Shared {
             System.out.println("***** Incorrect solution. Should be " + correctVal + " *****");
         }
     }
+
+    static void checkResult(String checkVal, String correctVal) {
+        if (checkVal.equals(correctVal)) {
+            System.out.println("Correct!");
+        } else {
+            System.out.println("***** Incorrect solution. Should be " + correctVal + " *****");
+        }
+    }
 }
