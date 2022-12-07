@@ -37,7 +37,7 @@ public class Advent02 {
         }
 
         int solution_a = total_score;
-        System.out.println("Solution 01a: " + solution_a);
+        System.out.println("Solution 02a: " + solution_a);
 
         if (example) {
             String check = Shared.checkResult(solution_a, 15);
@@ -71,11 +71,12 @@ public class Advent02 {
         }
 
         int solution_b = total_score;
-        System.out.println("Solution 01a: " + solution_b);
+        System.out.println("Solution 02a: " + solution_b);
 
         if (example) {
             String check = Shared.checkResult(solution_b, 12);
             System.out.println(check);
         }
+
     }
 }
