@@ -40,8 +40,7 @@ public class Advent02 {
         System.out.println("Solution 02a: " + solution_a);
 
         if (example) {
-            String check = Shared.checkResult(solution_a, 15);
-            System.out.println(check);
+            Shared.checkResult(solution_a, 15);
         }
 
         // Part 2: X = lose, Y = draw, Z = win
@@ -74,8 +73,7 @@ public class Advent02 {
         System.out.println("Solution 02a: " + solution_b);
 
         if (example) {
-            String check = Shared.checkResult(solution_b, 12);
-            System.out.println(check);
+            Shared.checkResult(solution_b, 12);
         }
 
     }

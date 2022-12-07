@@ -29,8 +29,7 @@ public class Advent01 {
         System.out.println("Solution 01a: " + solution_a);
 
         if (example) {
-            String check = Shared.checkResult(solution_a, 24000);
-            System.out.println(check);
+            Shared.checkResult(solution_a, 24000);
         }
 
         // Part 2: find the total calories carried by the top 3 elves
@@ -39,8 +38,7 @@ public class Advent01 {
         System.out.println("Solution 01b: " + solution_b);
 
         if (example) {
-            String check_b = Shared.checkResult(solution_b, 45000);
-            System.out.println(check_b);
+            Shared.checkResult(solution_b, 45000);
         }
     }
 }

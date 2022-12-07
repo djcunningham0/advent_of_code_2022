@@ -30,11 +30,11 @@ public class Shared {
         return listOfStrings.toArray(new String[0]);
     }
 
-    static String checkResult(int checkVal, int correctVal) {
+    static void checkResult(int checkVal, int correctVal) {
         if (checkVal == correctVal) {
-            return "Correct!";
+            System.out.println("Correct!");
         } else {
-            return "***** Incorrect solution. Should be " + correctVal + " *****";
+            System.out.println("***** Incorrect solution. Should be " + correctVal + " *****");
         }
     }
 }
