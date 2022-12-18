@@ -38,6 +38,14 @@ public class Shared {
         }
     }
 
+    static void checkResult(long checkVal, long correctVal) {
+        if (checkVal == correctVal) {
+            System.out.println("Correct!");
+        } else {
+            System.out.println("***** Incorrect solution. Should be " + correctVal + " *****");
+        }
+    }
+
     static void checkResult(String checkVal, String correctVal) {
         if (checkVal.equals(correctVal)) {
             System.out.println("Correct!");
